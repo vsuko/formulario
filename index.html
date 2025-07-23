@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>¡Unite a la banda! - Encuesta de gustos musicales</title>
+  
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main>
+    <h1 id="title">Solicitud de unión a la banda</h1>
+    <p id="description">Queres conocernos, queremos conocerte.</p>
+
+    <form id="survey-form">
+
+      <label id="name-label" for="name">Nombre completo</label>
+      <input id="name" name="name" type="text" placeholder="Ej: Valentin Zukovsky" required />
+
+      <label id="email-label" for="email">Correo electrónico</label>
+      <input id="email" name="email" type="email" placeholder="ejemplo@correo.com" required />
+
+      <label id="number-label" for="number">Edad (opcional)</label>
+      <input id="number" name="age" type="number" min="11" max="70" placeholder="18" />
+
+      <label for="dropdown">Género musical favorito</label>
+      <select id="dropdown" name="genre">
+        <option value="">Selecciona un género</option>
+        <option value="rap">Rap</option>
+        <option value="jazz">Jazz</option>
+        <option value="rock">Rock</option>
+        <option value="blues">Blues</option>
+      </select>
+
+      <fieldset>
+        <legend>Instrumento preferido</legend>
+        <label><input type="radio" name="instrument" value="guitarra" checked /> Guitarra</label>
+        <label><input type="radio" name="instrument" value="bajo" /> Bajo</label>
+        <label><input type="radio" name="instrument" value="bateria" /> Batería</label>
+        <label><input type="radio" name="instrument" value="voz" /> Voz</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>¿Qué plataformas usas?</legend>
+        <label><input type="checkbox" name="platforms" value="spotify" /> Spotify</label>
+        <label><input type="checkbox" name="platforms" value="youtube" /> YouTube</label>
+        <label><input type="checkbox" name="platforms" value="applemusic" /> Apple Music</label>
+        <label><input type="checkbox" name="platforms" value="vinilos" /> Vinilos</label>
+      </fieldset>
+
+      <label for="comments">¿Qué sumas a la banda?</label>
+      <textarea id="comments" name="comments" rows="4" placeholder="¡Iluminanos!"></textarea>
+
+      <button id="submit" type="submit">Enviar</button>
+    </form>
+  </main>
+</body>
+</html>
